@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="interest">
+            <h2 style="text-align: center;padding-top: 20px;">SIMPLE INTERST CALCULATOR</h2>
+            <label class="button">Principal:</label>
+            <input type="number" v-model="principal"><br>
+            <label class="button" >Rate:</label>
+            <input type="number" v-model="rate"><br>
+            <label class="button">Time:</label>
+            <input type="number" v-model="time"><br>
+            <div id ="button">The Simple Interest is $ {{result()}}</div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
